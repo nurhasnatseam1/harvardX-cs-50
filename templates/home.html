@@ -1,0 +1,169 @@
+{%extends "layout.html"%}
+
+
+
+{%block heading%}
+home
+{%endblock%}
+
+
+{%block body%}
+
+<div id="navbar">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li>
+                </ul>
+                
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li>
+                </ul> 
+            </div>
+        </nav>
+    </div>
+
+
+
+    <!-- this is the explore section that we needed so badly
+    so lets get it done bro -->
+    <section id="explore-section">
+       <div id="explore-section-image">
+           <div id="explore-section-image-overlay">
+            <div class="row px-5" id="full-row-of-explore-section">
+                <div class="col-lg-8 d-none d-lg-block">
+                    <h1 class="display-4">
+                        why do we think is that you are the best in the world!!
+                    </h1>
+                    <div class="d-flex">
+                        <i class="fa fa-check p-4"></i>
+                        <div class="align-self-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repudiandae adipisci asperiores harum, delectus non. Dicta reiciendis facere quasi voluptate.</div>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa fa-check p-4"></i>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repudiandae adipisci asperiores harum, delectus non. Dicta reiciendis facere quasi voluptate.</div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card bg-transparent border border-secondary">
+                       <div class="card-body">
+                           <form action="" class="form-group">
+                               <input type="text" class="form-control mb-2" name='username' id="username" placeholder="username">
+                               <input type="email" class="form-control mb-2" name='email' id="email" placeholder="email">
+                               <input type="password" class="form-control mb-2" name='password' id="password" placeholder="password">
+                               <input type="password" class="form-control mb-2" name='confirm-password' id="confirm-password" placeholder="confirm password">
+                               <input type="submit" value="submit" class="btn btn-outline-light btn-block">
+                           </form>
+                       </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+       </div>
+    </section>
+
+    <!-- after the explore section comes the view our club section -->
+    <section id="club-section">
+        <div class="club-section-header m-5 text-center">
+            <div class="row">
+                <div class="col">
+                    <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut dignissimos quaerat, porro quisquam quibusdam eaque debitis dolorem exercitationem cumque obcaecati!</p>
+                     <a href="#" class="btn btn-outline-light">Our Club</a>
+                </div>
+            </div>
+        </div>
+        <div class="club-body bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6"><img src="./images/explore-section1.jpg" alt="" class="img-fluid m-4 border rounded-circle img-hover"></div>
+                    <div class="col-md-6">
+                        <div class="p-5 text-dark">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit architecto quis maiores praesentium quidem dolores voluptates nam voluptatum iure expedita?</p>
+                            <div class="d-flex justify-content-between">
+                                <i class="fa fa-check p-4"></i>
+                                <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, vel?</div>
+
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                    <i class="fa fa-check p-4"></i>
+                                    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, vel?</div>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="footer" style="height:100px">
+        <div class="container-fluid text-center">
+            <div class="row">
+              <div class="col p-4">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modelId">
+                    Contact US
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                                  <h4 class="modal-title" id="modelTitleId"></h4>
+                              </div>
+                              <div class="modal-body">
+                                  <!--form in the modal
+                                    lets go baby-->
+                                    <form action="" class="form-group">
+                                      <input type="email" name="email" class="form-control mb-3">
+                                      <input type="text" name="username" class="form-control mb-3">
+                                      <textarea name="textarea" class="form-control mb-3" cols="30" rows="10"></textarea>
+                                    </form>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+             </div>
+        </div>
+    </section>
+
+{%endblock%}
